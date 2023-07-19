@@ -1,0 +1,301 @@
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: currentColor;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+
+    transform: scaleX(0);
+    transition: transform 250ms;
+
+}
+
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+    color: #6d1d8e;
+}
+
+.midcontainer {
+    background-color: #755f9e;
+    display: flex;
+    width: 100%;
+    height: 80%;
+    padding-left: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.message-sticky{
+    z-index: 1;
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    /* border: 1px solid green; */
+    padding: 14px 10px;
+       border-radius: 50px;
+    background-color: #6d1d8e;
+}
+
+.dialogue {
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #6d1d8e;
+    margin-top: 40px;
+}
+
+.dialogue-location {
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #6d1d8e;
+    padding: 5px 0px;
+}
+
+.midpara {
+    line-height: 20px;
+    font-weight: 650;
+    font-size: 16px;
+}
+
+.midbanner {
+    padding-left: 50px;
+
+}
+
+.button-enquire {
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #6d1d8e;
+    border: none;
+    margin-top: 20px;
+
+}
+
+.containerinfo {
+    background-color: white;
+    margin-top: 100px;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Kaisei HarunoUmi', serif;
+    text-align: center;
+    color: #6d1d8e;
+    display: block;
+
+
+}
+
+.infocontent {
+    font-size: 14px;
+    padding-top: 30px;
+    /* border: 1px solid black; */
+    width: 600px;
+    margin-left: 26%;
+    font-family: sans-serif;
+    color: #5d5d5d;
+    font-weight: 400;
+}
+
+::placeholder {
+    color: #c5c5c5;
+    padding-left: 10px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+}
+
+.searchicon {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    right: 105px;
+    top: 7px;
+
+    background-color: white;
+}
+
+.searchcontainer {
+    margin-bottom: 90px;
+}
+
+
+.coursescontainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card {
+    margin-bottom: 30px;
+    align-items: center;
+    padding-top: 30px;
+    background-color: #f8f8f8;
+
+}
+
+.card-img-top {
+    position: relative;
+}
+
+.card-img-bottom {
+    display: none;
+    position: absolute;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px;
+    background-color: white;
+}
+
+.card:hover .card-img-bottom {
+    cursor: pointer;
+    display: flex;
+}
+
+.card-title {
+    padding-bottom: 40px;
+}
+
+.card-text {
+    color: #5d5d5d;
+    font-size: 14px;
+}
+
+.card-body p {
+    color: #6d1d8e;
+}
+
+span {
+    color: #5d5d5d;
+}
+
+.btn {
+    color: #6d1d8e;
+    border-color: #6d1d8e;
+}
+
+.btn:hover {
+    background-color: #6d1d8e;
+    color: white;
+    border: none;
+}
+
+.lowmidrow {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: #f8f8f8;
+}
+
+.lowmidcol1 {
+    padding: 30px;
+}
+
+.lowmidcol2 {
+    padding: 30px;
+    padding-top: 55px;
+    text-align: justify;
+}
+
+.yluminar {
+    font-size: 50px;
+    text-align: start;
+    padding-bottom: 50px;
+}
+
+.luminardesc {
+    color: #696969;
+}
+
+ul {
+    color: #666666;
+}
+
+ul li {
+    line-height: 30px;
+}
+
+.lowimg {
+    width: 100%;
+}
+
+.lowimagecontainer {
+    /* display: flex; */
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.startatluminar {
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    z-index: 1;
+    color: rgb(32, 7, 7);
+    font-size: 30px;
+    text-align: center;
+}
+
+.query {
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    z-index: 1;
+    color: rgb(22, 22, 22);
+    text-align: center;
+}
+h6{
+    padding-left: 30px;
+}
+hr{
+    margin-left: 30px;
+border: 1px solid #6d1d8e;}
+.footercontainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.footerrow {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+.footercol{
+    width: 250px;
+}
+.courselinks{
+    text-decoration: none;
+    color: #696969;
+
+}
+.courses{
+    list-style: none;
+    font-size: 12px;
+    padding-bottom: 15px;
+    line-height: 20px;
+}
+
+h6{
+    color: #6d1d8e;
+}
+
